@@ -92,10 +92,12 @@ def save_favorites_to_file(favorites: dict) -> None:
 
 
 def safe_str(val) -> str:
-    """Convert to clean string; hide NaN/None as empty."""
+    """Convert to clean string; hide NaN/None and normalize whitespace."""
     if val is None or pd.isna(val):
         return ""
-    return str(val).strip()
+    text = str(val).replace("\n", " ").replace("\r", " ")
+    text = " ".join(text.split())
+    return text.strip()
 
 
 # ---------- Load data ----------
@@ -174,7 +176,7 @@ with col_now:
     if st.button("NOW"):
         now = datetime.now()
         st.session_state["time_choice"] = now.time().replace(microsecond=0)
-        weekday_name = now.strftime("%A")  # "Monday", etc.
+        weekday_name = now.strftime("%A")
         if weekday_name in DAY_FLAGS:
             st.session_state["day_choice"] = weekday_name
         st.rerun()
@@ -182,7 +184,7 @@ with col_now:
 with col_tonight:
     if st.button("TONIGHT"):
         today = datetime.now()
-        st.session_state["time_choice"] = time(19, 0)  # 7 PM
+        st.session_state["time_choice"] = time(19, 0)
         weekday_name = today.strftime("%A")
         if weekday_name in DAY_FLAGS:
             st.session_state["day_choice"] = weekday_name
@@ -193,7 +195,7 @@ col_tom_afternoon, col_tom_night = st.sidebar.columns(2)
 with col_tom_afternoon:
     if st.button("Tomorrow Afternoon"):
         tomorrow = datetime.now() + timedelta(days=1)
-        st.session_state["time_choice"] = time(15, 0)  # 3 PM tomorrow
+        st.session_state["time_choice"] = time(15, 0)
         weekday_name = tomorrow.strftime("%A")
         if weekday_name in DAY_FLAGS:
             st.session_state["day_choice"] = weekday_name
@@ -202,7 +204,7 @@ with col_tom_afternoon:
 with col_tom_night:
     if st.button("Tomorrow Night"):
         tomorrow = datetime.now() + timedelta(days=1)
-        st.session_state["time_choice"] = time(19, 0)  # 7 PM tomorrow
+        st.session_state["time_choice"] = time(19, 0)
         weekday_name = tomorrow.strftime("%A")
         if weekday_name in DAY_FLAGS:
             st.session_state["day_choice"] = weekday_name
@@ -265,10 +267,8 @@ if "Start Time Clean" in filtered.columns and "End Time Clean" in filtered.colum
         end = row["End Time Clean"]
         if pd.isna(start) or pd.isna(end):
             return False
-        # Normal same-day window → END IS EXCLUSIVE
         if start <= end:
             return start <= selected_time < end
-        # Overnight window (e.g. 9 PM to 2 AM) → END IS EXCLUSIVE
         return (selected_time >= start) or (selected_time < end)
 
     filtered = filtered[filtered.apply(row_is_in_window, axis=1)]
@@ -280,7 +280,7 @@ if max_drink_budget is not None and "Drink Min Price" in filtered.columns:
         & (filtered["Drink Min Price"] <= max_drink_budget)
     ]
 
-# Favorites-only filter (based on current favorites keys)
+# Favorites-only filter
 favorites_dict = st.session_state.get("favorites", {})
 favorite_keys_set = set(favorites_dict.keys())
 
@@ -290,7 +290,6 @@ if show_favorites_only:
             filtered.apply(lambda r: build_fav_key(r) in favorite_keys_set, axis=1)
         ]
     else:
-        # No favorites yet → empty result
         filtered = filtered.iloc[0:0]
 
 # ======================
@@ -304,7 +303,6 @@ if filtered.empty:
 else:
     st.write(f"{len(filtered)} result(s)")
 
-    # Sort by zone then cheapest drink if available
     sort_by = []
     ascending = []
 
@@ -344,30 +342,25 @@ else:
             zone = safe_str(row.get("Location Zone"))
             day_label = safe_str(row.get("Day of Week"))
             drinks_text = safe_str(row.get("Drinks"))
-            cheapest_drink = safe_str(row.get("Cheapest Drink"))
             food_text = safe_str(row.get("Food"))
             cheapest_food = safe_str(row.get("Cheapest Food Item"))
             start_t = row.get("Start Time Clean")
             end_t = row.get("End Time Clean")
 
-            # Format times nicely
             def fmt_time(t):
                 if t is None or pd.isna(t):
                     return "—"
                 if isinstance(t, pd.Timestamp):
                     t = t.time()
                 try:
-                    # Many systems: '5:00 PM'
                     return t.strftime("%-I:%M %p")
                 except ValueError:
-                    # Windows fallback
                     return t.strftime("%I:%M %p").lstrip("0")
 
             start_str = fmt_time(start_t)
             end_str = fmt_time(end_t)
 
             with st.container(border=True):
-                # Top row: Zone + Casino + Restaurant + ⭐
                 col_text, col_fav = st.columns([6, 1])
 
                 with col_text:
@@ -385,11 +378,10 @@ else:
                     fav_checked = st.checkbox(
                         "⭐",
                         value=is_fav,
-                        key=f"fav_mobile_{key}_{idx}",  # ensure uniqueness per row
+                        key=f"fav_mobile_{key}_{idx}",
                         label_visibility="collapsed",
                     )
 
-                # Day, Start / End
                 day_time_bits = []
                 if day_label:
                     day_time_bits.append(day_label)
@@ -398,16 +390,10 @@ else:
                 if day_time_bits:
                     st.markdown(" • ".join(day_time_bits))
 
-                # Cheapest drink + short description
-                if cheapest_drink or drinks_text:
-                    drink_line = ""
-                    if cheapest_drink:
-                        drink_line += f"🍹 **{cheapest_drink}**"
-                    if drinks_text:
-                        drink_line += f"  \n{drinks_text}"
-                    st.markdown(drink_line)
+                # Drinks line: just show the full Drinks description
+                if drinks_text:
+                    st.markdown(f"🍹 {drinks_text}")
 
-                # Optional food line (if present)
                 if cheapest_food or food_text:
                     food_line = ""
                     if cheapest_food:
@@ -419,7 +405,6 @@ else:
                 if fav_checked:
                     new_favorite_keys.append(key)
 
-        # Update favorites from mobile checkboxes
         old_favorites = st.session_state.get("favorites", {})
         new_favorites = {
             key: old_favorites.get(key, {"tags": []}) for key in new_favorite_keys
@@ -447,12 +432,10 @@ else:
         display_df.index = sorted_df.apply(build_fav_key, axis=1)
         display_df.index.name = "favorite_key"
 
-        # Favorite column from current favorites dict
         display_df["Favorite"] = display_df.index.to_series().apply(
             lambda key: key in favorites
         )
 
-        # Reorder so Favorite is the first column
         ordered_cols = ["Favorite"] + [
             c for c in display_cols if c in display_df.columns
         ]
@@ -485,7 +468,6 @@ else:
             },
         )
 
-        # Sync favorites from edited table back to session_state + file
         if "Favorite" in edited_df.columns:
             new_fav_keys = edited_df.index[edited_df["Favorite"]].tolist()
             old_favorites = st.session_state.get("favorites", {})
