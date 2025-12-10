@@ -1,0 +1,249 @@
+Location Zone,Casino,Restaurant,Day of Week,Start Time,End Time,Drinks,Food,Start Time Clean,End Time Clean,Is Sunday,Is Monday,Is Tuesday,Is Wednesday,Is Thursday,Is Friday,Is Saturday,Drink Min Price,Cheapest Drink,Food Min Price,Cheapest Food Item
+Strip,ARIA Resort & Casino,Bardot Brasserie,Daily,5:00 PM,7:00 PM,"$7 beers, $12–$16 wine, $14 cocktails","$3 oysters, $8–$24 food",5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,7,$7 beers,3,$3 oysters
+Strip,ARIA Resort & Casino,Cathédrale,Daily,5:00 PM,7:00 PM,"$10 beer, $11 wine, $12 well, $14 signature cocktails",$16–$18 appetizers,5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,10,$10 beer,16,$16–$18 appetizers
+Strip,ARIA Resort & Casino,Proper Bar (Proper Eats Food Hall),Mon–Fri,4:00 PM,6:00 PM,—,$2 Blue Point oysters,4:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,0,,2,$2 Blue Point oysters
+Strip,Showcase Mall,BrewDog Las Vegas,Mon–Thu,3:00 PM,6:00 PM,$7 craft beer,"$10 pizza, 2-for-1 apps",3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,7,$7 craft beer,10,$10 pizza
+Strip,Showcase Mall,BrewDog Las Vegas,Sunday,9:00 AM,12:00 PM,$5 Bloody Marys,—,9:00:00 AM,12:00:00 PM,1,0,0,0,0,0,0,5,$5 Bloody Marys,0,
+Strip,Caesars Palace,Carmine’s Italian,Mon–Thu,2:00 PM,4:00 PM,"$8 wine, $9–$10 cocktails",$10–$14 appetizers,2:00:00 PM,4:00:00 PM,0,1,1,1,1,0,0,8,$8 wine,10,$10–$14 appetizers
+Strip,Caesars Palace,Pier 17 Yacht Club,Sun–Thu,5:00 PM,7:00 PM,"$7 beer, $8 wine, $10 well, $12 specialty cocktails",—,5:00:00 PM,7:00:00 PM,1,1,1,1,1,0,0,7,$7 beer,0,
+Strip,Caesars Palace,RPM Italian,Mon–Fri,3:00 PM,6:00 PM,$8 cocktails & wine,Italian bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,8,$8 cocktails & wine,0,
+Strip,Caesars Palace,Sushi Roku,Daily,4:00 PM,6:00 PM,Happy Hour drinks,Happy Hour food,4:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Caesars Palace,The Palm Restaurant,Sun–Fri,3:00 PM,5:30 PM,"$5 beer, $7 wine, $8 cocktails",$7–$13 small bites,3:00:00 PM,5:30:00 PM,1,1,1,1,1,1,0,5,$5 beer,7,$7–$13 small bites
+Strip,Caesars Palace,True Food Kitchen,Mon–Fri,3:00 PM,6:00 PM,"$5 beer & wine, $3 off cocktails","$2 off dumplings/sliders/tenders, $3 off pizza",3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5,$5 beer & wine,2,$2 off dumplings/sliders/tenders
+Strip,Caesars Palace,Zaytinya,Mon–Thu,5:00 PM,6:00 PM,Happy Hour drinks,Happy Hour bites,5:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,0,,0,
+Strip,Casino Royale,Casino Royale Bar,Daily,12:00 AM,11:59 PM,"$3 bottled beer, $5 craft beer",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,3,$3 bottled beer,0,
+Strip,The Cosmopolitan,Beauty & Essex,Sun–Thu,5:00 PM,7:00 PM,$10 cocktails,$10 dishes,5:00:00 PM,7:00:00 PM,1,1,1,1,1,0,0,10,$10 cocktails,10,$10 dishes
+Strip,The Cosmopolitan,Blue Ribbon,Daily,5:00 PM,6:30 PM,"$7 beer, $12 wine","$12–$35 food, $8–$12 desserts",5:00:00 PM,6:30:00 PM,1,1,1,1,1,1,1,7,$7 beer,12,$12–$35 food
+Strip,The Cosmopolitan,China Poblano,Daily,4:00 PM,6:00 PM,"$7 beer, $13 margaritas",$4–$13 bites,4:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,7,$7 beer,4,$4–$13 bites
+Strip,The Cosmopolitan,Jaleo,Daily,5:00 PM,7:00 PM,"$7 beer, $7–$9 sangria, $10 wine, $13 cocktails",$4–$10 tapas,5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,7,$7 beer,4,$4–$10 tapas
+Strip,The Cosmopolitan,LPM Restaurant & Bar,Wed–Sun,5:00 PM,7:00 PM,$11 cocktails,$6–$12 appetizers,5:00:00 PM,7:00:00 PM,1,0,0,1,1,1,1,11,$11 cocktails,6,$6–$12 appetizers
+Strip,The Cosmopolitan,Momofuku,Daily,3:00 PM,5:00 PM,"$8 beer, $10 cocktails, $12 wine & sake",$7–$15 bites,3:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,8,$8 beer,7,$7–$15 bites
+Strip,The Cosmopolitan,STK Steakhouse,Daily,2:30 PM,5:30 PM,½ off specialty cocktails,$7 menu items,2:30:00 PM,5:30:00 PM,1,1,1,1,1,1,1,0,,7,$7 menu items
+Strip,Cromwell,Bound Cocktail Lounge,Daily,3:00 PM,7:00 PM,2-for-1 signature cocktails,—,3:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,2,2-for-1 signature cocktails,0,
+Strip,Cromwell,Interlude Cocktail Lounge,Daily,11:00 AM,4:00 PM,"$5 domestic draft beer, margaritas, mixed cocktails",—,11:00:00 AM,4:00:00 PM,1,1,1,1,1,1,1,5,$5 domestic draft beer,0,
+Strip,Crystals,Toca Madera,"Mon, Wed–Fri",4:00 PM,6:00 PM,Happy Hour drinks,Happy Hour appetizers,4:00:00 PM,6:00:00 PM,0,1,0,1,1,1,0,0,,0,
+Strip,Crystals,Toca Madera,Tuesday,9:00 PM,11:59 PM,Happy Hour drinks,Taco Tuesday food,9:00:00 PM,11:59:00 PM,0,0,1,0,0,0,0,0,,0,
+Strip,Excalibur,All Casino Bars,Daily,12:00 AM,11:59 PM,"$3 margaritas, $2 extra tequila shot",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,3,$3 margaritas,0,
+Strip,Excalibur,Buca di Beppo,Mon–Fri,4:00 PM,7:00 PM,"$6+ beer, shots, wine, sangria & cocktails",Select apps,4:00:00 PM,7:00:00 PM,0,1,1,1,1,1,0,6,$6+ beer,0,
+Strip,Excalibur,Dick’s Last Resort,Mon–Thu,12:00 PM,5:00 PM,"$8 beer, wells & margaritas",Fried pickles,12:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,8,$8 beer,0,
+Strip,Excalibur,Lobby Bar,Mon–Fri,3:00 PM,6:00 PM,$7 well cocktails,—,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,7,$7 well cocktails,0,
+Strip,Excalibur,Sherwood Bar,Mon–Fri,11:00 AM,3:00 PM,"$5 draft beer, $7 wells",—,11:00:00 AM,3:00:00 PM,0,1,1,1,1,1,0,5,$5 draft beer,0,
+Strip,Excalibur,The Lounge,Thu–Sat,6:00 PM,9:00 PM,$7 wells,—,6:00:00 PM,9:00:00 PM,0,0,0,0,1,1,1,7,$7 wells,0,
+Strip,Excalibur,Thunder Bar,Thu–Sat,8:00 PM,11:00 PM,$7 beers & wells,—,8:00:00 PM,11:00:00 PM,0,0,0,0,1,1,1,7,$7 beers & wells,0,
+Strip,Fashion Show,Benihana,Mon–Fri,3:00 PM,6:00 PM,"$3–$9 beer, wine, sake, cocktails",Appetizers,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,3,$3–$9 beer,0,
+Strip,Fashion Show,California Pizza Kitchen,Mon–Fri,3:00 PM,6:00 PM,"$5 beer, $6 wells, $7 wine, $8 cocktails","$5–$8 apps, $9 pizza",3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5,$5 beer,5,$5–$8 apps
+Strip,Fashion Show,Davidoff of Geneva,Sun–Thu,5:00 PM,7:00 PM,50% off drinks,—,5:00:00 PM,7:00:00 PM,1,1,1,1,1,0,0,50,50% off drinks,0,
+Strip,Fashion Show,Davidoff of Geneva,Daily,12:00 PM,2:00 PM,50% off brunch drinks,—,12:00:00 PM,2:00:00 PM,1,1,1,1,1,1,1,50,50% off brunch drinks,0,
+Strip,Fashion Show,El Segundo Sol,Mon–Thu,3:00 PM,6:00 PM,$6.50 margaritas,$5–$12 food,3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,6.5,$6.50 margaritas,5,$5–$12 food
+Strip,Fashion Show,Galpão Gaucho,Mon–Fri,4:00 PM,6:30 PM,"$5 beer, $7–$8 wine, $6–$8 cocktails",$18–$28 food,4:00:00 PM,6:30:00 PM,0,1,1,1,1,1,0,5,$5 beer,18,$18–$28 food
+Strip,Fashion Show,Galpão Gaucho,Sunday,3:00 PM,6:00 PM,"$5 beer, $7–$8 wine, $6–$8 cocktails",$18–$28 food,3:00:00 PM,6:00:00 PM,1,0,0,0,0,0,0,5,$5 beer,18,$18–$28 food
+Strip,Fashion Show,Happy Camper Pizza,Mon–Thu,3:00 PM,6:00 PM,"$6 beer, $9 wine, $11 spritzes",Discounted bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,6,$6 beer,0,
+Strip,Fashion Show,Maggiano’s Little Italy,Mon–Fri,3:00 PM,6:00 PM,$9 wine & cocktails,$9 apps,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,9,$9 wine & cocktails,9,$9 apps
+Strip,Flamingo,All Casino Bars,Daily,12:00 AM,11:59 PM,$5 domestic beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 domestic beers,0,
+Strip,Flamingo,Havana 1957,Mon–Fri,3:00 PM,6:00 PM,"$6 beer, $10 mojitos & daiquiris",$9 bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,6,$6 beer,9,$9 bites
+Strip,Circus Circus,Slots A Fun Bar,Daily,12:00 AM,11:59 PM,$2 Heineken,"$2 popcorn, hot dogs or shrimp cocktail",12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,2,$2 Heineken,2,$2 popcorn
+Strip,Circus Circus,West Bar,Mon–Fri,3:00 PM,6:00 PM,"$5 mimosas, $6 Bloody Mary’s, $6 cocktails, $8 beer & shot",—,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5,$5 mimosas,0,
+Strip,Circus Circus,West Bar,Mon–Fri,3:00 AM,6:00 AM,"$5 mimosas, $6 Bloody Mary’s, $6 cocktails, $8 beer & shot",—,3:00:00 AM,6:00:00 AM,0,1,1,1,1,1,0,5,$5 mimosas,0,
+Strip,Planet Hollywood,All Casino Bars (Except Glass Bar),Daily,12:00 AM,11:59 PM,$5 domestic beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 domestic beers,0,
+Strip,Planet Hollywood,Blondies Sports Bar,Mon–Fri,12:00 PM,4:00 PM,—,$9.99 lunch specials,12:00:00 PM,4:00:00 PM,0,1,1,1,1,1,0,0,,9.99,$9.99 lunch specials
+Strip,Planet Hollywood,Blondies Sports Bar,Daily,3:00 PM,6:00 PM,$20 AYCD wells & Bud Light,—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,20,$20 AYCD wells & Bud Light,0,
+Strip,Planet Hollywood,Blondies Sports Bar,Daily,All Day,All Day,"$2 Bud Light, $3 Estrella, $5 shots",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,2,$2 Bud Light,0,
+Strip,Planet Hollywood,Buffalo Wild Wings,Mon–Fri,3:00 PM,6:00 PM,"$3–$5 beer, $4–$6 cocktails",$3–$6 food,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,3,$3–$5 beer,3,$3–$6 food
+Strip,Planet Hollywood,Buffalo Wild Wings,Daily,9:00 PM,11:59 PM,"$3–$5 beer, $4 wells",$4 bar food,9:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,3,$3–$5 beer,4,$4 bar food
+Strip,Planet Hollywood,Cabo Wabo Cantina,Mon–Fri,3:00 PM,5:00 PM,"½ off drafts, sangria & margaritas, $6 tequila shots",—,3:00:00 PM,5:00:00 PM,0,1,1,1,1,1,0,0,,0,
+Strip,Planet Hollywood,Flights,Daily,9:00 AM,10:00 PM,$15 cocktail flights,—,9:00:00 AM,10:00:00 PM,1,1,1,1,1,1,1,15,$15 cocktail flights,0,
+Strip,Planet Hollywood,GEN Korean BBQ,Daily,All Day,All Day,—,$25 AYCE sushi & tapas,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,0,,25,$25 AYCE sushi & tapas
+Strip,Planet Hollywood,GEN Korean BBQ,Daily,4:00 PM,6:00 PM,$2–$3 off alcohol,—,4:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,2,$2–$3 off alcohol,0,
+Strip,Planet Hollywood,Hot N Juicy Crawfish,Mon–Thu,3:00 PM,7:00 PM,Beer & wine specials,Happy Hour food,3:00:00 PM,7:00:00 PM,0,1,1,1,1,0,0,0,,0,
+Strip,Planet Hollywood,Ketchup Premium Burger Bar,Mon–Fri,3:00 PM,6:00 PM,Happy Hour cocktails & shakes,Happy Hour food,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,0,,0,
+Strip,Planet Hollywood,Ketchup Premium Burger Bar,Daily,All Day,All Day,"$5 24oz beer, shots & wells",Food specials,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 24oz beer,0,
+Strip,Planet Hollywood,La Salsa,Daily,3:00 PM,6:00 PM,"$5 wells & wine, $6 margaritas, $15 yard",—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 wells & wine,0,
+Strip,Planet Hollywood,Nacho Daddy,Mon–Thu,3:00 PM,6:00 PM,"$8 margaritas, beer, wine & wells",Select bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,8,$8 margaritas,0,
+Strip,Planet Hollywood,Nacho Daddy,Mon–Thu,10:00 PM,2:00 AM,"$8 margaritas, beer, wine & wells",$10 nachos & tacos,10:00:00 PM,2:00:00 AM,0,1,1,1,1,0,0,8,$8 margaritas,10,$10 nachos & tacos
+Strip,Planet Hollywood,P.F. Chang’s,Mon–Fri,3:00 PM,6:00 PM,"$5.99 beer, $6.99 wine, $8.99 cocktails",½ off select apps,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5.99,$5.99 beer,0,
+Strip,Planet Hollywood,P.F. Chang’s,Daily,9:00 PM,11:59 PM,"$5.99 beer, $6.99 wine, $8.99 cocktails",½ off select apps,9:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,5.99,$5.99 beer,0,
+Strip,Planet Hollywood,Rainforest Cafe,Mon–Fri,2:00 PM,6:00 PM,"$4 drafts, $5–$7 cocktails",$8–$10 apps,2:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,4,$4 drafts,8,$8–$10 apps
+Strip,Planet Hollywood,Rosa Mexicano,Daily,All Day,All Day,$7 mixed drinks,$11 appetizers,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,7,$7 mixed drinks,11,$11 appetizers
+Strip,Planet Hollywood,Tipsy Robot,Daily,All Day,All Day,BOGO drinks,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Harrah’s,All Casino Bars,Daily,12:00 AM,11:59 PM,$5 domestic beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 domestic beers,0,
+Strip,Horseshoe,All Casino Bars,Daily,12:00 AM,11:59 PM,$5 domestic beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 domestic beers,0,
+Strip,Horseshoe,Cabinet of Curiosities,Daily,1:00 PM,4:00 PM,"$6 beer, $9 wine, $12 specialty cocktails",—,1:00:00 PM,4:00:00 PM,1,1,1,1,1,1,1,6,$6 beer,0,
+Strip,Horseshoe,Cabinet of Curiosities,Daily,10:00 PM,11:59 PM,"$6 beer, $9 wine, $12 specialty cocktails",—,10:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,6,$6 beer,0,
+Strip,Horseshoe,Dirt Dog,Tuesday,All Day,All Day,"$5 Mexican beer, well tequila, $8 mini margaritas",—,12:00:00 AM,11:59:00 PM,0,0,1,0,0,0,0,5,$5 Mexican beer,0,
+Strip,Horseshoe,Dirt Dog,Wednesday,All Day,All Day,$5 drinks,$8 dirt bags,12:00:00 AM,11:59:00 PM,0,0,0,1,0,0,0,5,$5 drinks,8,$8 dirt bags
+Strip,Horseshoe,Dirt Dog,Thursday,All Day,All Day,"$8 teas, trash cans, Liquid Mary J",—,12:00:00 AM,11:59:00 PM,0,0,0,0,1,0,0,8,$8 teas,0,
+Strip,Horseshoe,Dirt Dog,Fri–Sun,2:00 PM,11:00 PM,"$5 beers & well shots, $10 crib cocktails",—,2:00:00 PM,11:00:00 PM,1,0,0,0,0,1,1,5,$5 beers & well shots,0,
+Strip,Horseshoe,Fuel Bar,Daily,All Day,All Day,BOGO cocktail (with coupon),—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Horseshoe,Giordano’s,Mon–Fri,3:00 PM,5:00 PM,50% off beer & wine,50% off appetizers,3:00:00 PM,5:00:00 PM,0,1,1,1,1,1,0,50,50% off beer & wine,50,50% off appetizers
+Strip,Horseshoe,Guy Fieri’s Flavortown Sports Kitchen,Mon–Fri,5:00 PM,11:00 PM,"$5 draft beers, $9.95 cocktails","$4–$7 appetizers, $19.99 beer & burger",5:00:00 PM,11:00:00 PM,0,1,1,1,1,1,0,5,$5 draft beers,4,$4–$7 appetizers
+Strip,Horseshoe,Jack Binion’s Steak,Wed–Sun,4:00 PM,10:00 PM,$7.77 vodka martini,"Wedge salad, shrimp cocktail, steak slider, hot fudge sundae",4:00:00 PM,10:00:00 PM,1,0,0,1,1,1,1,7.77,$7.77 vodka martini,0,
+Strip,Horseshoe,Wahlburgers (Take-Out Bar Only),Daily,All Day,All Day,"2-for-$7 beers & well drinks, $8 White Claw or 2-for-$14",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,2,2-for-$7 beers & well drinks,0,
+Strip,LINQ,All Casino Bars,Daily,12:00 AM,11:59 PM,$5 domestic beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 domestic beers,0,
+Strip,LINQ,CHAYO Mexican Kitchen + Tequila Bar,Mon–Thu,2:00 PM,5:00 PM,"$12 Coronitas/Modelitas, $6 Mi Campo shot, $8 Scorpion shot, house margarita",App or entree required,2:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,12,$12 Coronitas/Modelitas,0,
+Strip,LINQ,Dunkin’,Daily,1:00 PM,5:00 PM,50% off hot & iced coffee,—,1:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,50,50% off hot & iced coffee,0,
+Strip,LINQ,Favorite Bistro,Daily,2:00 PM,6:00 PM,"$6 beer, wine & cocktails",$10 finger foods,2:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,6,$6 beer,10,$10 finger foods
+Strip,LINQ,Favorite Bistro,Daily,All Day,All Day,$11 cocktail milkshakes & smoothies,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,11,$11 cocktail milkshakes & smoothies,0,
+Strip,LINQ,Guy Fieri’s Vegas Kitchen & Bar,Mon–Fri,2:00 PM,5:00 PM,"$5 draft beers, $9.95 cocktails","$4–$7 appetizers, $19.99 beer & burger",2:00:00 PM,5:00:00 PM,0,1,1,1,1,1,0,5,$5 draft beers,4,$4–$7 appetizers
+Strip,LINQ,High Roller Observation Wheel,Mon–Thu,4:00 PM,12:00 AM,Open bar (30 min ride – $69/person),—,4:00:00 PM,12:00:00 AM,0,1,1,1,1,0,0,30,Open bar (30 min ride – $69/person),0,
+Strip,LINQ,High Roller Observation Wheel,Fri–Sun,12:00 PM,12:00 AM,Open bar (30 min ride – $69/person),—,12:00:00 PM,12:00:00 AM,1,0,0,0,0,1,1,30,Open bar (30 min ride – $69/person),0,
+Strip,LINQ,Jimmy Kimmel’s Comedy Club,Daily,5:00 PM,7:00 PM,"$5 beer, $6 wine, shots & cocktails",$7 appetizers,5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,5,$5 beer,7,$7 appetizers
+Strip,LINQ,Maxie’s,Daily,All Day,All Day,"$3 draft beer or frozen margarita, $1 extra tequila shot",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,3,$3 draft beer or frozen margarita,0,
+Strip,LINQ,Off the Strip,Mon–Thu,2:00 PM,5:00 PM,"$5 beer, house wine & well drinks",$10 appetizers,2:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,5,$5 beer,10,$10 appetizers
+Strip,LINQ,The Boss Cafe,Daily,All Day,All Day,$5 beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 beers,0,
+Strip,LINQ,Tilted Kilt,Mon–Fri,2:00 PM,6:00 PM,"$2 off beer, wine & well cocktails",$11 food specials,2:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,2,$2 off beer,11,$11 food specials
+Strip,LINQ,Tilted Kilt,Sun–Wed,10:00 PM,11:59 PM,"$2 off beer, wine & well cocktails",$11 food specials,10:00:00 PM,11:59:00 PM,1,1,1,1,0,0,0,2,$2 off beer,11,$11 food specials
+Strip,LINQ,Virgil’s Real BBQ,Mon–Thu,2:00 PM,5:00 PM,"$6 draft beer, $8 wine, $7–$8 cocktails",$4–$10 appetizers,2:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,6,$6 draft beer,4,$4–$10 appetizers
+Strip,Luxor,All Casino Bars,Daily,12:00 AM,11:59 PM,"$3 margaritas, $2 extra Sauza tequila shot",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,3,$3 margaritas,0,
+Strip,Luxor,Aurora Cocktail Lounge,Mon–Thu,5:00 PM,7:00 PM,"$5 draft beer, $5 well cocktails",—,5:00:00 PM,7:00:00 PM,0,1,1,1,1,0,0,5,$5 draft beer,0,
+Strip,Luxor,Flight Bar,Mon–Thu,1:00 PM,4:00 PM,$5 draft beer,—,1:00:00 PM,4:00:00 PM,0,1,1,1,1,0,0,5,$5 draft beer,0,
+Strip,Mandalay Bay,Flanker Kitchen + Sports Bar,Mon–Fri,4:00 PM,6:00 PM,"$8 draft beer, cocktails & margaritas",$9–$12 food specials,4:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,8,$8 draft beer,9,$9–$12 food specials
+Strip,Mandalay Bay,House of Blues,Daily,3:00 PM,6:00 PM,"$7 bottled beer, $8 drafts, $8 wine, $12 cocktails",$8–$17 food,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,7,$7 bottled beer,8,$8–$17 food
+Strip,Mandalay Bay,House of Blues,Daily,9:00 PM,11:00 PM,"$7 bottled beer, $8 drafts, $8 wine, $12 cocktails",$8–$17 food,9:00:00 PM,11:00:00 PM,1,1,1,1,1,1,1,7,$7 bottled beer,8,$8–$17 food
+Strip,Mandalay Bay,Rí Rá Irish Pub,Daily,3:00 PM,6:00 PM,½ off select drinks,½ off select appetizers,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Mandalay Bay,Rí Rá Irish Pub,Daily,11:00 PM,12:00 AM,½ off select drinks,½ off select appetizers,11:00:00 PM,12:00:00 AM,1,1,1,1,1,1,1,0,,0,
+Strip,Mandalay Bay,S Bar,Tue–Sat,5:00 PM,7:00 PM,Happy Hour cocktails,Happy Hour bites,5:00:00 PM,7:00:00 PM,0,0,1,1,1,1,1,0,,0,
+Strip,MGM Grand,Craftsteak,Sun–Thu,4:00 PM,5:00 PM,Happy Hour drinks,Happy Hour food,4:00:00 PM,5:00:00 PM,1,1,1,1,1,0,0,0,,0,
+Strip,MGM Grand,Hakkasan Restaurant,Sun–Wed,5:00 PM,7:00 PM,"$10 cocktails, wine & sake",$10 dim sum & light bites,5:00:00 PM,7:00:00 PM,1,1,1,1,0,0,0,10,$10 cocktails,10,$10 dim sum & light bites
+Strip,MGM Grand,Loser’s Lounge,Varies,Varies,Varies,2-for-1 drink specials,—,,,0,0,0,0,0,0,0,2,2-for-1 drink specials,0,
+Strip,New York–New York,AMERICA,Daily,5:00 PM,5:00 AM,—,$24.95 ribeye dinner,5:00:00 PM,5:00:00 AM,1,1,1,1,1,1,1,0,,24.95,$24.95 ribeye dinner
+Strip,New York–New York,The Bar at Times Square,Mon–Fri,4:00 PM,7:00 PM,"$6 draft beer, $8 cocktails",$10 beer & shot combo,4:00:00 PM,7:00:00 PM,0,1,1,1,1,1,0,6,$6 draft beer,10,$10 beer & shot combo
+Strip,New York–New York,Broadway Burger Bar & Grill,Mon–Thu,3:00 PM,5:00 PM,"$8 16oz draft beer, house wine & well cocktails",3 for $7 appetizers,3:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,8,$8 16oz draft beer,3,3 for $7 appetizers
+Strip,New York–New York,Coyote Ugly Saloon,Daily,7:00 PM,9:00 PM,"$6 draft beer, $8 well cocktails, $12 beer & shot",—,7:00:00 PM,9:00:00 PM,1,1,1,1,1,1,1,6,$6 draft beer,0,
+Strip,New York–New York,Gonzalez Y Gonzalez,Mon–Thu,2:00 PM,4:00 PM,"$6.95 Modelo, $8.95 wells, $9.95 margaritas & palomas",4 food specials,2:00:00 PM,4:00:00 PM,0,1,1,1,1,0,0,6.95,$6.95 Modelo,4,4 food specials
+Strip,New York–New York,Il Fornaio Italian Restaurant,Daily,3:00 PM,6:00 PM,"$8 beer, $9 wine, $10 cocktails",$11+ select appetizers,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,8,$8 beer,11,$11+ select appetizers
+Strip,New York–New York,Pour 24,Mon–Thu,12:00 PM,3:00 PM,"$7 draft beer, $8 well cocktails",—,12:00:00 PM,3:00:00 PM,0,1,1,1,1,0,0,7,$7 draft beer,0,
+Strip,CityCenter,Ocean Prime,Mon–Fri,3:00 PM,6:00 PM,50% off signature cocktails,50% off appetizers,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,50,50% off signature cocktails,50,50% off appetizers
+Strip,Paris,All Casino Bars,Daily,12:00 AM,11:59 PM,$7.50 domestic beers,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,7.5,$7.50 domestic beers,0,
+Strip,Park MGM,Beerhaus,Daily,2:00 PM,4:00 PM,"$7 local drafts, $7 margaritas & Mai Tais",$7 menu items,2:00:00 PM,4:00:00 PM,1,1,1,1,1,1,1,7,$7 local drafts,7,$7 menu items
+Strip,Park MGM,Beerhaus,Daily,9:00 PM,11:59 PM,"$7 local drafts, $7 margaritas & Mai Tais",$7 menu items,9:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,7,$7 local drafts,7,$7 menu items
+Strip,Park MGM,BETMGM Sportsbook & Bar,Daily,7:00 PM,11:59 PM,$7.77 beers,$7.77 bar bites,7:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,7.77,$7.77 beers,7.77,$7.77 bar bites
+Strip,Park MGM,Crack Shack,Mon–Thu,2:00 PM,5:00 PM,"$5 select beers & shots, $9 select cocktails",Discounted kitchen items,2:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,5,$5 select beers & shots,0,
+Strip,Park MGM,Eataly Bar,Daily,1:00 PM,4:00 PM,Drink specials,Pizza specials,1:00:00 PM,4:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Park MGM,Eataly Bar,Daily,8:00 PM,10:00 PM,Discounted wine & cocktails,Discounted food,8:00:00 PM,10:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Peppermill,Peppermill Fireside Lounge,Daily,3:00 PM,6:00 PM,"Special pricing on wells, select beers & house wines",½ off select appetizers,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Perry’s Pizzeria & Taphouse,Perry’s Pizzeria & Taphouse,Daily,12:00 AM,11:59 PM,$7 for 2 pints,$10 slice & pint,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,7,$7 for 2 pints,10,$10 slice & pint
+Strip,Resorts World,AQUA,Mon–Fri,4:00 PM,6:00 PM,$12–$15 wine & cocktails,Bar bites from $8,4:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,12,$12–$15 wine & cocktails,8,Bar bites from $8
+Strip,Resorts World,Brezza,Daily,3:00 PM,6:00 PM,—,Cicchetti small bites,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Resorts World,Crossroads Kitchen,Mon–Sat,4:00 PM,5:30 PM,$10 drinks,$10 plates,4:00:00 PM,5:30:00 PM,0,1,1,1,1,1,1,10,$10 drinks,10,$10 plates
+Strip,Resorts World,FUHU,Tue–Sat,5:00 PM,7:00 PM,—,50% off small plates & sushi,5:00:00 PM,7:00:00 PM,0,0,1,1,1,1,1,0,,50,50% off small plates & sushi
+Strip,Resorts World,Kusa Nori,Daily,4:00 PM,5:30 PM,"$8 beers, $8 sake bombs, $13 cocktails",$7–$11 sushi & discounted bites,4:00:00 PM,5:30:00 PM,1,1,1,1,1,1,1,8,$8 beers,7,$7–$11 sushi & discounted bites
+Strip,Resorts World,RedTail,Thu–Mon,7:00 PM,8:00 PM,"Discounted beer, wine & cocktails","$10 snacks, wings & sandwiches",7:00:00 PM,8:00:00 PM,1,1,0,0,1,1,1,0,,10,$10 snacks
+Strip,Resorts World,Stubborn Seed,Daily,4:00 PM,6:00 PM,Cocktails from $16,Small plates from $14,4:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,16,Cocktails from $16,14,Small plates from $14
+Strip,Resorts World,¡VIVA! Mexican Restaurant,Daily,3:00 PM,5:00 PM,"$6 beer, $6 house wine, $12 margarita",Food specials,3:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,6,$6 beer,0,
+Strip,SAHARA,Balla Italian Soul,Daily,5:00 PM,6:00 PM,$6–$10 wine & cocktails,$5–$15 appetizers,5:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,6,$6–$10 wine & cocktails,5,$5–$15 appetizers
+Strip,SAHARA,Balla Italian Soul,Daily,9:00 PM,10:00 PM,$6–$10 wine & cocktails,$5–$15 appetizers,9:00:00 PM,10:00:00 PM,1,1,1,1,1,1,1,6,$6–$10 wine & cocktails,5,$5–$15 appetizers
+Strip,SAHARA,Casbar Lounge,Daily,3:00 PM,5:00 PM,"½ off wells & wine, BOGO beers",—,3:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,SAHARA,Casbar Lounge,Daily,8:00 PM,9:00 PM,"½ off wells & wine, BOGO beers",—,8:00:00 PM,9:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,SAHARA,Casbar Lounge,Daily,All Day,All Day,$7 prosecco,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,7,$7 prosecco,0,
+Strip,SAHARA,Chickie’s & Pete’s,Mon–Fri,2:00 PM,5:00 PM,50% off draft beers,—,2:00:00 PM,5:00:00 PM,0,1,1,1,1,1,0,50,50% off draft beers,0,
+Strip,SAHARA,Uno Más Street Tacos + Spirits,Daily,Open,6:00 PM,"$5 margaritas, $7 beers, $10 wine",$5–$10 appetizers,12:00:00 AM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 margaritas,5,$5–$10 appetizers
+Strip,STRAT,108 Eats & 108 Drinks,Mon–Thu,3:00 PM,7:00 PM,2-for-1 cocktails,2-for-1 appetizers,3:00:00 PM,7:00:00 PM,0,1,1,1,1,0,0,2,2-for-1 cocktails,2,2-for-1 appetizers
+Strip,STRAT,Atomic Golf,Tuesday,All Day,All Day,$5 tequila shots,$5 tacos,12:00:00 AM,11:59:00 PM,0,0,1,0,0,0,0,5,$5 tequila shots,5,$5 tacos
+Strip,STRAT,Atomic Golf,Sat–Sun,Open,2:00 PM,$25 bottomless Bloody Marys & Mimosas,—,12:00:00 AM,2:00:00 PM,1,0,0,0,0,0,1,25,$25 bottomless Bloody Marys & Mimosas,0,
+Strip,STRAT,McCall’s Heartland Grill,Thu–Sun,4:00 PM,6:00 PM,2-for-1 beer & wine,—,4:00:00 PM,6:00:00 PM,1,0,0,0,1,1,1,2,2-for-1 beer & wine,0,
+Strip,STRAT,McCall’s Heartland Grill,Fri–Sat,10:00 PM,11:59 PM,2-for-1 beer & wine,—,10:00:00 PM,11:59:00 PM,0,0,0,0,0,1,1,2,2-for-1 beer & wine,0,
+Strip,STRAT,Mimosa Mornings,Sat–Sun,10:00 AM,2:00 PM,$28.99 bottomless mimosas,—,10:00:00 AM,2:00:00 PM,1,0,0,0,0,0,1,28.99,$28.99 bottomless mimosas,0,
+Strip,STRAT,Swim & Social,Seasonal,Last Hour,Close,50% off cocktails,—,,11:59:00 PM,0,0,0,0,0,0,0,50,50% off cocktails,0,
+Strip,STRAT,Sugar Factory,Varies,Varies,Varies,2-for-1 drinks,10% off appetizers,,,0,0,0,0,0,0,0,2,2-for-1 drinks,10,10% off appetizers
+Strip,Treasure Island,Big Chill,Thu–Sun,1:00 PM,6:00 PM,"$10 20oz beers, $14 frozen cocktails, $15 margaritas",—,1:00:00 PM,6:00:00 PM,1,0,0,0,1,1,1,10,$10 20oz beers,0,
+Strip,Treasure Island,Breeze Bar,Daily,10:00 AM,6:00 PM,$5 select draft beers,—,10:00:00 AM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 select draft beers,0,
+Strip,Treasure Island,The Cove Bar & Arcade,Daily,All Day,All Day,"$17 specialty cocktails, $35 beer buckets",—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,17,$17 specialty cocktails,0,
+Strip,Treasure Island,Gilley’s Las Vegas,Daily,10:00 AM,6:00 PM,$5 select draft beers,—,10:00:00 AM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 select draft beers,0,
+Strip,Treasure Island,Golden Circle Sportsbook & Bar,Daily,10:00 AM,6:00 PM,$5 select draft beers,—,10:00:00 AM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 select draft beers,0,
+Strip,Treasure Island,Margarita Bar (Valet),Daily,Open,4:00 PM,"$10 20oz draft beer, $14 frozen cocktails, $15 margaritas",—,12:00:00 AM,4:00:00 PM,1,1,1,1,1,1,1,10,$10 20oz draft beer,0,
+Strip,Venetian & Palazzo,BRERA Osteria,Daily,2:00 PM,5:00 PM,"Cocktail, beer & wine specials",½ off pizza,2:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Venetian & Palazzo,Buddy V’s Ristorante,Daily,3:00 PM,5:30 PM,"$5 beer, wine & cocktails",$6 small bites,3:00:00 PM,5:30:00 PM,1,1,1,1,1,1,1,5,$5 beer,6,$6 small bites
+Strip,Venetian & Palazzo,Canaletto,Daily,4:00 PM,6:00 PM,"$8 beer, $9 wine, $10 cocktails",$11–$16 antipasto & pizza,4:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,8,$8 beer,11,$11–$16 antipasto & pizza
+Strip,Venetian & Palazzo,Cañonita Mexican Restaurant,Mon–Thu,2:00 PM,5:00 PM,"$6 beer & wells, $7 wine & cocktails",Discounted bites from $12,2:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,6,$6 beer & wells,12,Discounted bites from $12
+Strip,Venetian & Palazzo,CHICA,Sun–Thu,3:00 PM,6:00 PM,$10 cocktails,$10 bites,3:00:00 PM,6:00:00 PM,1,1,1,1,1,0,0,10,$10 cocktails,10,$10 bites
+Strip,Venetian & Palazzo,Cut by Wolfgang Puck,Daily,3:00 PM,5:00 PM,$12 highballs,$12 handrolls,3:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,12,$12 highballs,12,$12 handrolls
+Strip,Venetian & Palazzo,Double Helix Wine Bar,Daily,4:30 PM,6:30 PM,Happy Hour drinks,Happy Hour appetizers,4:30:00 PM,6:30:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Venetian & Palazzo,Electra,Daily,5:00 PM,7:00 PM,"$6 beer, $8 cocktails, $9 wine",—,5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,6,$6 beer,0,
+Strip,Venetian & Palazzo,estiatorio Milos,Daily,3:00 PM,5:00 PM,Cocktail specials,Bar bites,3:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Strip,Venetian & Palazzo,Flight Club,Sun–Fri,3:00 PM,6:00 PM,"$6 draft beer, $10 wine, $8 cocktails","$2.70 oysters, $7–$12 bites",3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,0,6,$6 draft beer,2.7,$2.70 oysters
+Strip,Venetian & Palazzo,Grand Lux Cafe,Mon–Fri,4:00 PM,6:30 PM,"$7 drafts, cocktails from $10",$11.50 select appetizers,4:00:00 PM,6:30:00 PM,0,1,1,1,1,1,0,7,$7 drafts,11.5,$11.50 select appetizers
+Strip,Venetian & Palazzo,Grimaldi’s Pizzeria,Tuesday,All Day,All Day,½ off wine,—,12:00:00 AM,11:59:00 PM,0,0,1,0,0,0,0,0,,0,
+Strip,Venetian & Palazzo,HaSalon,Tue–Sat,5:00 PM,8:00 PM,"$6 beer, $12 wine",Bites from $10,5:00:00 PM,8:00:00 PM,0,0,1,1,1,1,1,6,$6 beer,10,Bites from $10
+Strip,Venetian & Palazzo,KAMU Ultra Karaoke,Mon–Thu,6:00 PM,10:00 PM,—,Karaoke room $70/hr,6:00:00 PM,10:00:00 PM,0,1,1,1,1,0,0,0,,70,Karaoke room $70/hr
+Strip,Venetian & Palazzo,Liam’s Den & Bubble Bar,Daily,3:00 PM,6:00 PM,$5 off champagne & cocktails,—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 off champagne & cocktails,0,
+Strip,Venetian & Palazzo,Mercato della Pescheria,Daily,3:00 PM,6:00 PM,Drink specials,Select appetizers ~$7,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,0,,7,Select appetizers ~$7
+Strip,Venetian & Palazzo,Rock House,Mon–Fri,2:00 PM,6:00 PM,"$7 draft beers, house wine & wells",Happy Hour appetizers,2:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,7,$7 draft beers,0,
+Strip,Venetian & Palazzo,Sugarcane Raw Bar & Grill,Sun–Thu,3:00 PM,6:00 PM,"$7 beer, $8 wine, $8 cocktails","$2.50 oysters, $5–$9 appetizers",3:00:00 PM,6:00:00 PM,1,1,1,1,1,0,0,7,$7 beer,2.5,$2.50 oysters
+Strip,Venetian & Palazzo,Sugarcane Raw Bar & Grill,Sun–Thu,10:00 PM,11:59 PM,"$7 beer, $8 wine, $8 cocktails","$2.50 oysters, $5–$9 appetizers",10:00:00 PM,11:59:00 PM,1,1,1,1,1,0,0,7,$7 beer,2.5,$2.50 oysters
+Strip,Venetian & Palazzo,SUSHISAMBA,Sun–Fri,3:00 PM,6:00 PM,Up to 50% off drinks,Up to 50% off food,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,0,50,Up to 50% off drinks,50,Up to 50% off food
+Strip,Venetian & Palazzo,TAO Asian Bistro,Sun–Wed,8:30 PM,10:00 PM,"$10 cocktails, sake & wine",$10 bites,8:30:00 PM,10:00:00 PM,1,1,1,1,0,0,0,10,$10 cocktails,10,$10 bites
+Strip,Venetian & Palazzo,TAO Asian Bistro,Thu–Sun,9:30 PM,11:00 PM,"$10 cocktails, sake & wine",$10 bites,9:30:00 PM,11:00:00 PM,1,0,0,0,1,1,1,10,$10 cocktails,10,$10 bites
+Strip,Venetian & Palazzo,WAKUDA,Mon–Fri,3:00 PM,6:00 PM,Drinks from $6,Small bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,6,Drinks from $6,0,
+Strip,Venetian & Palazzo,The X Pot,Daily,5:00 PM,8:00 PM,50% off beer & wells,50% off bar food,5:00:00 PM,8:00:00 PM,1,1,1,1,1,1,1,50,50% off beer & wells,50,50% off bar food
+Strip,Bellagio,Harvest,Daily,4:30 PM,5:30 PM,"Special pricing on signature cocktails (Harvest Mule, Old Fashioned, Boulevardier, Lychee Martini, Harvest Spritz, Blood Orange Margarita)","Special pricing on shareables (Shishito Peppers, Bone Marrow, Pork Belly Lettuce Wraps, Salt & Pepper Shrimp, Seasonal Flatbread, Artisan Cheese Board, Hanger Steak Crostini)",4:30:00 PM,5:30:00 PM,1,1,1,1,1,1,1,0,,0,
+Fremont,18 Bin,18 Bin,Daily,5:00 PM,8:00 PM,"$5 draft beer, $6 wine, $6 wells, $7 seltzers & RTDs",$7–$12 appetizers,5:00:00 PM,8:00:00 PM,1,1,1,1,1,1,1,5,$5 draft beer,7,$7–$12 appetizers
+Fremont,18 Bin,18 Bin,Mon–Thu,11:00 AM,3:00 PM,Beer included,$7 smash burger + beer,11:00:00 AM,3:00:00 PM,0,1,1,1,1,0,0,0,,7,$7 smash burger + beer
+Fremont,Atomic Liquors,Atomic Liquors,Daily,12:00 PM,11:59 PM,"$7–$8 beers, $11–$14 cocktails",$7–$15 food,12:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,7,$7–$8 beers,7,$7–$15 food
+Fremont,Bangkok Street Thai Kitchen,Bangkok Street Thai Kitchen,Daily,All Day,All Day,"$5 draft beer, $5 sake bomb, $5 sparkling wine",$10 food specials (10 items),12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,5,$5 draft beer,10,$10 food specials (10 items)
+Fremont,Bin 702,Bin 702,Daily,3:00 PM,6:00 PM,"$5 draft beer, $6 well cocktails, $7 wine, $20 wine bottles",—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 draft beer,0,
+Fremont,California Hotel & Casino,All Casino Bars,Daily,12:00 AM,11:59 PM,$4 Heineken,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,4,$4 Heineken,0,
+Fremont,California Hotel & Casino,Cat’s Meow,Daily,5:00 PM,8:00 PM,2-for-1 drinks,—,5:00:00 PM,8:00:00 PM,1,1,1,1,1,1,1,2,2-for-1 drinks,0,
+Fremont,Circa,8 East,Daily,3:00 PM,5:00 PM,Happy Hour drinks,Happy Hour appetizers,3:00:00 PM,5:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Fremont,Circa,Corduroy,Mon–Wed,5:00 PM,11:59 PM,"$3 PBR, $5 domestic, $6 wells, $9 martinis",—,5:00:00 PM,11:59:00 PM,0,1,1,1,0,0,0,3,$3 PBR,0,
+Fremont,Circa,Corduroy,Thu–Sun,5:00 PM,8:00 PM,"$3 PBR, $5 domestic, $6 wells, $9 martinis",—,5:00:00 PM,8:00:00 PM,1,0,0,0,1,1,1,3,$3 PBR,0,
+Fremont,Downtown Grand,Fat Cat Las Vegas,Wed–Fri,5:00 PM,7:00 PM,"$4 draft beer, $5 wells",—,5:00:00 PM,7:00:00 PM,0,0,0,1,1,1,0,4,$4 draft beer,0,
+Fremont,Downtown Grand,Hotdog Cart,Daily,All Day,All Day,$3 PBR,$3 Nathan’s hot dog,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,3,$3 PBR,3,$3 Nathan’s hot dog
+Fremont,Downtown Grand,Hot N Juicy Crawfish,Mon–Thu,3:00 PM,7:00 PM,"$2 off beer, $8 margaritas",Happy Hour food,3:00:00 PM,7:00:00 PM,0,1,1,1,1,0,0,2,$2 off beer,0,
+Fremont,Downtown Grand,Pizza Rock,Mon–Thu,3:00 PM,6:00 PM,"$2 off beer & wine, $5 24oz PBR, $9 cocktails","$7–$9 eats, $8–$9 personal pizza",3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,2,$2 off beer & wine,7,$7–$9 eats
+Fremont,Downtown Grand,Triple George Grill,Mon–Fri,3:00 PM,6:00 PM,"$5 bottled beer, $6 draft beer, wine & wells, $10 margaritas",$8–$34 bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5,$5 bottled beer,8,$8–$34 bites
+Fremont,El Cortez,All Casino Bars,Daily,12:00 AM,11:59 PM,$6 drink of the month,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,6,$6 drink of the month,0,
+Fremont,El Cortez,Parlor Bar,Daily,5:00 PM,7:00 PM,"$5 Bud Light & Coors drafts, $6 select cocktails, $7 house margaritas, mimosas & wine",—,5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,5,$5 Bud Light & Coors drafts,0,
+Fremont,El Cortez,ShowBar,Daily,3:00 PM,6:00 PM,"$10 beer & shot combos, specialty drinks",—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,10,$10 beer & shot combos,0,
+Fremont,El Cortez,ShowBar,Daily,12:00 AM,3:00 AM,"$10 beer & shot combos, specialty drinks",—,12:00:00 AM,3:00:00 AM,1,1,1,1,1,1,1,10,$10 beer & shot combos,0,
+Fremont,El Cortez,Eureka,Daily,3:00 PM,6:00 PM,"$6 drafts, $8 wine, $8.50 cocktails",$7–$13 food,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,6,$6 drafts,7,$7–$13 food
+Fremont,El Cortez,Eureka,Daily,9:00 PM,11:59 PM,"$6 drafts, $8 wine, $8.50 cocktails",$7–$13 food,9:00:00 PM,11:59:00 PM,1,1,1,1,1,1,1,6,$6 drafts,7,$7–$13 food
+Fremont,Evel Pie,Evel Pie,Daily,All Day,All Day,$8 beer & cheese slice,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,8,$8 beer & cheese slice,0,
+Fremont,Fat Sal’s,Fat Sal’s,Tuesday,All Day,All Day,$1 beers,—,12:00:00 AM,11:59:00 PM,0,0,1,0,0,0,0,1,$1 beers,0,
+Fremont,Fergusons Downtown,F The Bar,Varies,Varies,Varies,Call for current specials,—,,,0,0,0,0,0,0,0,0,,0,
+Fremont,Fin & Feathers,Fin & Feathers,Mon–Fri,12:00 PM,8:00 PM,—,$5 food specials,12:00:00 PM,8:00:00 PM,0,1,1,1,1,1,0,0,,5,$5 food specials
+Fremont,Fin & Feathers,Fin & Feathers,Saturday,5:00 PM,8:00 PM,—,$5 food specials,5:00:00 PM,8:00:00 PM,0,0,0,0,0,0,1,0,,5,$5 food specials
+Fremont,Fin & Feathers,Fin & Feathers,Sunday,6:00 PM,11:59 PM,—,$5 food specials,6:00:00 PM,11:59:00 PM,1,0,0,0,0,0,0,0,,5,$5 food specials
+Fremont,Fremont Hotel,All Casino Bars,Daily,12:00 AM,11:59 PM,$4 Heineken & Modelo,—,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,4,$4 Heineken & Modelo,0,
+Fremont,Fremont Hotel,Lanai Express,Daily,All Day,All Day,—,$3.99 shrimp cocktail,12:00:00 AM,11:59:00 PM,1,1,1,1,1,1,1,0,,3.99,$3.99 shrimp cocktail
+Fremont,Fremont Hotel,Tony Roma’s,Daily,4:30 PM,6:30 PM,—,$15.99 prime rib dinner,4:30:00 PM,6:30:00 PM,1,1,1,1,1,1,1,0,,15.99,$15.99 prime rib dinner
+Fremont,Fremont Hotel,Tony Roma’s,Daily,9:00 PM,11:00 PM,—,$17.99 steak & lobster dinner,9:00:00 PM,11:00:00 PM,1,1,1,1,1,1,1,0,,17.99,$17.99 steak & lobster dinner
+Fremont,Garagiste Wine Room & Merchant,Garagiste Wine Room & Merchant,Mon–Fri,3:00 PM,6:00 PM,$7 select wines,—,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,7,$7 select wines,0,
+Fremont,Golden Gate,Bar Prohibition!,Daily,6:00 PM,7:00 PM,Free open bar,—,6:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,0,,0,
+Fremont,Golden Nugget,Cadillac Mexican Kitchen,Mon–Thu,3:00 PM,5:00 PM,"$5 draft beer, wine & house margaritas",$5–$10 bites,3:00:00 PM,5:00:00 PM,0,1,1,1,1,0,0,5,$5 draft beer,5,$5–$10 bites
+Fremont,Golden Nugget,Charthouse,Mon–Fri,4:00 PM,6:00 PM,"$6 beer, $8 premium spirits, $9 cocktails, $10 wine",$8–$12 eats,4:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,6,$6 beer,8,$8–$12 eats
+Fremont,Gold Spike,Gold Spike,Daily,3:00 PM,6:00 PM,"$5 draft beer, $5 wells, $7 select cocktails",—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 draft beer,0,
+Fremont,Gold Spike,Gold Spike,Daily,3:00 AM,6:00 AM,"$5 draft beer, $5 wells, $7 select cocktails",—,3:00:00 AM,6:00:00 AM,1,1,1,1,1,1,1,5,$5 draft beer,0,
+Fremont,Neonopolis,Hammered Harry’s,Mon–Fri,11:00 AM,7:00 PM,"$3.50 draft beer, $3 wells, $4 house margaritas, $5 frozen margaritas",$5 select appetizers,11:00:00 AM,7:00:00 PM,0,1,1,1,1,1,0,3.5,$3.50 draft beer,5,$5 select appetizers
+Fremont,Hennessey’s Tavern,Hennessey’s Tavern,Mon–Fri,4:00 PM,7:00 PM,"$7–$9 beer, wine & cocktails, $11 beer & shot combos",$8 snacks,4:00:00 PM,7:00:00 PM,0,1,1,1,1,1,0,7,$7–$9 beer,8,$8 snacks
+Fremont,Holstein’s Shakes and Buns,Holstein’s Shakes and Buns,Mon–Fri,3:00 PM,6:00 PM,"$5 beer, wine & wells",$6–$16 bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5,$5 beer,6,$6–$16 bites
+Fremont,Holstein’s Shakes and Buns,Holstein’s Shakes and Buns,Wednesday,8:00 PM,10:00 PM,"$5 beer, wine & wells",$6–$16 bites,8:00:00 PM,10:00:00 PM,0,0,0,1,0,0,0,5,$5 beer,6,$6–$16 bites
+Fremont,Horse Trailer Hideout,Horse Trailer Hideout,Mon–Fri,3:00 PM,6:00 PM,"$4 select drafts, $5 wells, ½ off specialty cocktails",—,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,4,$4 select drafts,0,
+Fremont,Horse Trailer Hideout,Horse Trailer Hideout,Sun–Thu,10:00 PM,12:00 AM,"$4 select drafts, $5 wells, ½ off specialty cocktails",—,10:00:00 PM,12:00:00 AM,1,1,1,1,1,0,0,4,$4 select drafts,0,
+Fremont,John Cutter Saloon,John Cutter Saloon,Daily,4:00 PM,6:00 PM,"$5 bottled beer, $6 wells, $7 wine, $9 martinis",50% off select starters,4:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 bottled beer,50,50% off select starters
+Fremont,John Cutter Saloon,John Cutter Saloon,Daily,12:00 AM,6:00 AM,"$5 bottled beer, $6 wells, $7 wine, $9 martinis",50% off select starters,12:00:00 AM,6:00:00 AM,1,1,1,1,1,1,1,5,$5 bottled beer,50,50% off select starters
+Fremont,Le Thai,Le Thai,Mon–Thu,4:00 PM,6:00 PM,"$5 beer, $6 wells, 20% off wine",$10–$12 appetizers,4:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,5,$5 beer,10,$10–$12 appetizers
+Fremont,Le Thai,Le Thai,Saturday,11:30 AM,4:00 PM,"$5 mimosas, 20% off wine",—,11:30:00 AM,4:00:00 PM,0,0,0,0,0,0,1,5,$5 mimosas,0,
+Fremont,Letty’s de Leticia’s Cocina,Letty’s de Leticia’s Cocina,Mon–Thu,3:00 PM,6:00 PM,"$4 domestic beer, $5 imports, ½ off cocktails","20% off appetizers, beer buckets & pitchers",3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,4,$4 domestic beer,20,20% off appetizers
+Fremont,Letty’s de Leticia’s Cocina,Letty’s de Leticia’s Cocina,Friday,3:00 PM,5:00 PM,"$4 domestic beer, $5 imports, ½ off cocktails","20% off appetizers, beer buckets & pitchers",3:00:00 PM,5:00:00 PM,0,0,0,0,0,1,0,4,$4 domestic beer,20,20% off appetizers
+Fremont,Main St Provisions,Main St Provisions,Daily,Open,6:00 PM,"$5 beer, $7 wine, $7 wells, $9 specialty cocktails",Appetizers,12:00:00 AM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 beer,0,
+Fremont,Mickey Finns,Mickey Finns,Mon–Fri,4:00 PM,7:00 PM,"$7 22oz Coors Light, house margaritas & lemonade, $9 cocktails",$8 eats,4:00:00 PM,7:00:00 PM,0,1,1,1,1,1,0,7,$7 22oz Coors Light,8,$8 eats
+Fremont,Mickey Finns,Mickey Finns,Tuesday,All Day,All Day,—,2-for-1 burgers & taco plates,12:00:00 AM,11:59:00 PM,0,0,1,0,0,0,0,0,,2,2-for-1 burgers & taco plates
+Fremont,Misterio Mezcal Bar,Misterio Mezcal Bar,Mon–Thu,Varies,Varies,Happy Hour drink specials,Happy Hour food specials,,,0,1,1,1,1,0,0,0,,0,
+Fremont,Mob Museum,The Starlight Plaza,Sun–Thu,5:00 PM,7:00 PM,"$5 beer, wine & classic cocktails",—,5:00:00 PM,7:00:00 PM,1,1,1,1,1,0,0,5,$5 beer,0,
+Fremont,Mob Museum,The Underground Speakeasy,Varies,Varies,Varies,Ask about current drink specials,—,,,0,0,0,0,0,0,0,0,,0,
+Fremont,Mob Museum,Nacho Daddy,Mon–Thu,3:00 PM,6:00 PM,"$5 margaritas, draft beer, house wine & wells",$7 bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,5,$5 margaritas,7,$7 bites
+Fremont,Palate,Palate,Wed–Fri,3:00 PM,6:00 PM,"$5 beer & seltzer, $8 wine, $8 wells, $9 specialty cocktails",$7–$10 eats,3:00:00 PM,6:00:00 PM,0,0,0,1,1,1,0,5,$5 beer & seltzer,7,$7–$10 eats
+Fremont,Palate,Palate,Saturday,4:00 PM,6:00 PM,"$5 beer & seltzer, $8 wine, $8 wells, $9 specialty cocktails",$7–$10 eats,4:00:00 PM,6:00:00 PM,0,0,0,0,0,0,1,5,$5 beer & seltzer,7,$7–$10 eats
+Fremont,Palate,Palate,Wednesday,All Day,All Day,—,$1 oysters,12:00:00 AM,11:59:00 PM,0,0,0,1,0,0,0,0,,1,$1 oysters
+Fremont,Park on Fremont,Park on Fremont,Tue–Thu,5:00 PM,7:00 PM,"$5 select drafts, $7 wells, sparkling & house wine, $9 cocktail of the day","$5–$9 eats, $15 burger & beer",5:00:00 PM,7:00:00 PM,0,0,1,1,1,0,0,5,$5 select drafts,5,$5–$9 eats
+Fremont,Park on Fremont,Park on Fremont,Fri–Sun,4:00 PM,6:00 PM,"$5 select drafts, $7 wells, sparkling & house wine, $9 cocktail of the day","$5–$9 eats, $15 burger & beer",4:00:00 PM,6:00:00 PM,1,0,0,0,0,1,1,5,$5 select drafts,5,$5–$9 eats
+Fremont,Downtown Grand,Pizza Rock,Mon–Thu,3:00 PM,6:00 PM,"$2 off beer & wine, $5 24oz PBR, $9 cocktails","$7–$9 eats, $8–$9 personal pizza",3:00:00 PM,6:00:00 PM,0,1,1,1,1,0,0,2,$2 off beer & wine,7,$7–$9 eats
+Fremont,Plaza,Hash House A Go Go,Daily,3:00 PM,6:00 PM,"$5 wells, $5 domestic beers",$7 appetizer specials,3:00:00 PM,6:00:00 PM,1,1,1,1,1,1,1,5,$5 wells,7,$7 appetizer specials
+Fremont,Plaza,Oscar’s Steakhouse,Daily,5:00 PM,7:00 PM,"$5 domestic beer, $8 wells, $9 wine, $12 martinis",$3–$11 appetizers,5:00:00 PM,7:00:00 PM,1,1,1,1,1,1,1,5,$5 domestic beer,3,$3–$11 appetizers
+Fremont,Plaza,Rick’s Rollin Smoke BBQ & Tavern,Sun–Thu,3:00 PM,6:00 PM,"$4 wine, $4 wells, $5 craft beer, $8 signature cocktails",—,3:00:00 PM,6:00:00 PM,1,1,1,1,1,0,0,4,$4 wine,0,
+Fremont,Plaza,Rick’s Rollin Smoke BBQ & Tavern,Sun–Thu,9:00 PM,11:59 PM,"$4 wine, $4 wells, $5 craft beer, $8 signature cocktails",—,9:00:00 PM,11:59:00 PM,1,1,1,1,1,0,0,4,$4 wine,0,
+Fremont,SerVehZah Bottle Shop & Tap Room,SerVehZah Bottle Shop & Tap Room,Mon–Fri,3:00 PM,7:00 PM,"$2 off draft beer, house wine micheladas",—,3:00:00 PM,7:00:00 PM,0,1,1,1,1,1,0,2,$2 off draft beer,0,
+Fremont,Soulbelly BBQ,Soulbelly BBQ,Tue–Fri,2:00 PM,5:00 PM,"$6 beer, $10 specialty cocktails, $10 beer & shot",$5–$10 eats,2:00:00 PM,5:00:00 PM,0,0,1,1,1,1,0,6,$6 beer,5,$5–$10 eats
+Fremont,Soulbelly BBQ,Soulbelly BBQ,Fri–Sat,9:00 PM,10:00 PM,"$6 beer, $10 specialty cocktails, $10 beer & shot",$5–$10 eats,9:00:00 PM,10:00:00 PM,0,0,0,0,0,1,1,6,$6 beer,5,$5–$10 eats
+Fremont,Taverna Costera,Taverna Costera,Varies,Varies,Varies,Daily rotating drink specials,Daily rotating food specials,,,0,0,0,0,0,0,0,0,,0,
+Fremont,Triple George Grill,Triple George Grill,Mon–Fri,3:00 PM,6:00 PM,"$5 bottled beer, $6 draft beer, wine & wells, $10 margaritas",$8–$34 bites,3:00:00 PM,6:00:00 PM,0,1,1,1,1,1,0,5,$5 bottled beer,8,$8–$34 bites
