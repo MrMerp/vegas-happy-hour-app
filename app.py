@@ -110,7 +110,7 @@ if "favorites" not in st.session_state:
 st.sidebar.header("Filters")
 
 # Mobile view toggle
-mobile_view = st.sidebar.checkbox("Mobile view (compact)", value=False)
+mobile_view = st.sidebar.checkbox("Mobile view (compact cards)", value=False)
 
 # Location / Zone filter
 zone_col = "Location Zone"
@@ -287,7 +287,7 @@ if show_favorites_only:
         filtered = filtered.iloc[0:0]
 
 # ======================
-# Display results (with editable favorites)
+# Display results
 # ======================
 
 st.subheader("✅ Matching Happy Hours")
@@ -295,34 +295,6 @@ st.subheader("✅ Matching Happy Hours")
 if filtered.empty:
     st.warning("No happy hours match your filters. Try adjusting time, zone, budget, or day.")
 else:
-    # Desktop vs mobile column sets
-    if not mobile_view:
-        base_display_cols = [
-            "Location Zone",
-            "Casino",
-            "Restaurant",
-            "Day of Week",
-            "Start Time Clean",
-            "End Time Clean",
-            "Drinks",
-            "Food",
-            "Cheapest Drink",
-            "Cheapest Food Item",
-        ]
-    else:
-        # Compact set for mobile – tighter and more scannable
-        base_display_cols = [
-            "Restaurant",
-            "Casino",
-            "Location Zone",
-            "Start Time Clean",
-            "End Time Clean",
-            "Cheapest Drink",
-            "Drinks",
-        ]
-
-    display_cols = [c for c in base_display_cols if c in filtered.columns]
-
     st.write(f"{len(filtered)} result(s)")
 
     # Sort by zone then cheapest drink if available
@@ -345,55 +317,173 @@ else:
             na_position="last",
         )
 
-    # Build display df and index by favorites key
-    display_df = sorted_df[display_cols].copy()
-    display_df.index = sorted_df.apply(build_fav_key, axis=1)
-    display_df.index.name = "favorite_key"
-
-    # Favorite column from current favorites dict
     favorites = st.session_state.get("favorites", {})
-    display_df["Favorite"] = display_df.index.to_series().apply(
-        lambda key: key in favorites
-    )
 
-    # Reorder so Favorite is the first column
-    ordered_cols = ["Favorite"] + [c for c in display_cols if c in display_df.columns]
-    display_df = display_df[ordered_cols]
+    if mobile_view:
+        # ------------- MOBILE CARD VIEW -------------
+        st.caption(
+            "📱 Mobile card view: tap ⭐ to favorite. "
+            "Favorites are saved to favorites.json on the server."
+        )
 
-    st.caption(
-        "⭐ Toggle favorites in the table below. "
-        "Favorites are saved to favorites.json in this app folder."
-        + (" (Compact column set for mobile view.)" if mobile_view else "")
-    )
+        new_favorite_keys = []
 
-    edited_df = st.data_editor(
-        display_df,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "Favorite": st.column_config.CheckboxColumn(
-                "⭐ Favorite",
-                help="Save this spot to your favorites on this device",
-            ),
-            "Start Time Clean": st.column_config.TimeColumn(
-                "Start Time",
-                help="Happy hour start time",
-                format="h:mm A",
-            ),
-            "End Time Clean": st.column_config.TimeColumn(
-                "End Time",
-                help="Happy hour end time",
-                format="h:mm A",
-            ),
-        },
-    )
+        for idx, row in sorted_df.iterrows():
+            key = build_fav_key(row)
+            is_fav = key in favorites
 
-    # Sync favorites from edited table back to session_state + file
-    if "Favorite" in edited_df.columns:
-        new_fav_keys = edited_df.index[edited_df["Favorite"]].tolist()
+            restaurant = str(row.get("Restaurant", "")).strip()
+            casino = str(row.get("Casino", "")).strip()
+            zone = str(row.get("Location Zone", "")).strip()
+            day_label = str(row.get("Day of Week", "")).strip()
+            drinks_text = str(row.get("Drinks", "")).strip()
+            cheapest_drink = str(row.get("Cheapest Drink", "")).strip()
+            food_text = str(row.get("Food", "")).strip()
+            cheapest_food = str(row.get("Cheapest Food Item", "")).strip()
+            start_t = row.get("Start Time Clean")
+            end_t = row.get("End Time Clean")
+
+            # Format times nicely
+            def fmt_time(t):
+                if t is None or pd.isna(t):
+                    return "—"
+                if isinstance(t, pd.Timestamp):
+                    t = t.time()
+                try:
+                    # Unix-style (works on many systems)
+                    return t.strftime("%-I:%M %p")
+                except ValueError:
+                    # Windows fallback (no %-I)
+                    return t.strftime("%I:%M %p").lstrip("0")
+
+            start_str = fmt_time(start_t)
+            end_str = fmt_time(end_t)
+
+            with st.container(border=True):
+                # Top row: Zone + Casino + Restaurant + ⭐
+                col_text, col_fav = st.columns([6, 1])
+
+                with col_text:
+                    parts = []
+                    if zone:
+                        parts.append(f"**{zone}**")
+                    if casino:
+                        parts.append(casino)
+                    if restaurant:
+                        parts.append(restaurant)
+                    title_line = " · ".join(parts) if parts else "Unknown location"
+                    st.markdown(title_line)
+
+                with col_fav:
+                    fav_checked = st.checkbox(
+                        "⭐",
+                        value=is_fav,
+                        key=f"fav_mobile_{key}",
+                        label_visibility="collapsed",
+                    )
+
+                # Day, Start / End
+                day_time_bits = []
+                if day_label:
+                    day_time_bits.append(day_label)
+                if start_str != "—" or end_str != "—":
+                    day_time_bits.append(f"{start_str}–{end_str}")
+                if day_time_bits:
+                    st.markdown(" • ".join(day_time_bits))
+
+                # Cheapest drink + short description
+                if cheapest_drink or drinks_text:
+                    drink_line = ""
+                    if cheapest_drink:
+                        drink_line += f"🍹 **{cheapest_drink}**"
+                    if drinks_text:
+                        drink_line += f"  \n{drinks_text}"
+                    st.markdown(drink_line)
+
+                # Optional food line (if present)
+                if cheapest_food or food_text:
+                    food_line = ""
+                    if cheapest_food:
+                        food_line += f"🍽️ **{cheapest_food}**"
+                    if food_text:
+                        food_line += f"  \n{food_text}"
+                    st.markdown(food_line)
+
+                if fav_checked:
+                    new_favorite_keys.append(key)
+
+        # Update favorites from mobile checkboxes
         old_favorites = st.session_state.get("favorites", {})
         new_favorites = {
-            key: old_favorites.get(key, {"tags": []}) for key in new_fav_keys
+            key: old_favorites.get(key, {"tags": []}) for key in new_favorite_keys
         }
         st.session_state["favorites"] = new_favorites
         save_favorites_to_file(new_favorites)
+
+    else:
+        # ------------- DESKTOP TABLE VIEW -------------
+        display_cols = [
+            "Location Zone",
+            "Casino",
+            "Restaurant",
+            "Day of Week",
+            "Start Time Clean",
+            "End Time Clean",
+            "Drinks",
+            "Food",
+            "Cheapest Drink",
+            "Cheapest Food Item",
+        ]
+        display_cols = [c for c in display_cols if c in sorted_df.columns]
+
+        display_df = sorted_df[display_cols].copy()
+        display_df.index = sorted_df.apply(build_fav_key, axis=1)
+        display_df.index.name = "favorite_key"
+
+        # Favorite column from current favorites dict
+        display_df["Favorite"] = display_df.index.to_series().apply(
+            lambda key: key in favorites
+        )
+
+        # Reorder so Favorite is the first column
+        ordered_cols = ["Favorite"] + [
+            c for c in display_cols if c in display_df.columns
+        ]
+        display_df = display_df[ordered_cols]
+
+        st.caption(
+            "⭐ Toggle favorites in the table below. "
+            "Favorites are saved to favorites.json in this app folder."
+        )
+
+        edited_df = st.data_editor(
+            display_df,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Favorite": st.column_config.CheckboxColumn(
+                    "⭐ Favorite",
+                    help="Save this spot to your favorites on this device",
+                ),
+                "Start Time Clean": st.column_config.TimeColumn(
+                    "Start Time",
+                    help="Happy hour start time",
+                    format="h:mm A",
+                ),
+                "End Time Clean": st.column_config.TimeColumn(
+                    "End Time",
+                    help="Happy hour end time",
+                    format="h:mm A",
+                ),
+            },
+        )
+
+        # Sync favorites from edited table back to session_state + file
+        if "Favorite" in edited_df.columns:
+            new_fav_keys = edited_df.index[edited_df["Favorite"]].tolist()
+            old_favorites = st.session_state.get("favorites", {})
+            new_favorites = {
+                key: old_favorites.get(key, {"tags": []}) for key in new_fav_keys
+            }
+            st.session_state["favorites"] = new_favorites
+            save_favorites_to_file(new_favorites)
