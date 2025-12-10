@@ -91,6 +91,13 @@ def save_favorites_to_file(favorites: dict) -> None:
         pass
 
 
+def safe_str(val) -> str:
+    """Convert to clean string; hide NaN/None as empty."""
+    if val is None or pd.isna(val):
+        return ""
+    return str(val).strip()
+
+
 # ---------- Load data ----------
 try:
     df = load_data(DATA_FILE)
@@ -332,14 +339,14 @@ else:
             key = build_fav_key(row)
             is_fav = key in favorites
 
-            restaurant = str(row.get("Restaurant", "")).strip()
-            casino = str(row.get("Casino", "")).strip()
-            zone = str(row.get("Location Zone", "")).strip()
-            day_label = str(row.get("Day of Week", "")).strip()
-            drinks_text = str(row.get("Drinks", "")).strip()
-            cheapest_drink = str(row.get("Cheapest Drink", "")).strip()
-            food_text = str(row.get("Food", "")).strip()
-            cheapest_food = str(row.get("Cheapest Food Item", "")).strip()
+            restaurant = safe_str(row.get("Restaurant"))
+            casino = safe_str(row.get("Casino"))
+            zone = safe_str(row.get("Location Zone"))
+            day_label = safe_str(row.get("Day of Week"))
+            drinks_text = safe_str(row.get("Drinks"))
+            cheapest_drink = safe_str(row.get("Cheapest Drink"))
+            food_text = safe_str(row.get("Food"))
+            cheapest_food = safe_str(row.get("Cheapest Food Item"))
             start_t = row.get("Start Time Clean")
             end_t = row.get("End Time Clean")
 
@@ -350,10 +357,10 @@ else:
                 if isinstance(t, pd.Timestamp):
                     t = t.time()
                 try:
-                    # Unix-style (works on many systems)
+                    # Many systems: '5:00 PM'
                     return t.strftime("%-I:%M %p")
                 except ValueError:
-                    # Windows fallback (no %-I)
+                    # Windows fallback
                     return t.strftime("%I:%M %p").lstrip("0")
 
             start_str = fmt_time(start_t)
@@ -378,7 +385,7 @@ else:
                     fav_checked = st.checkbox(
                         "⭐",
                         value=is_fav,
-                        key=f"fav_mobile_{key}",
+                        key=f"fav_mobile_{key}_{idx}",  # ensure uniqueness per row
                         label_visibility="collapsed",
                     )
 
