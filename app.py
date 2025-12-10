@@ -394,14 +394,9 @@ else:
                 if drinks_text:
                     st.markdown(f"🍹 {drinks_text}")
 
-                if cheapest_food or food_text:
-                    food_line = ""
-                    if cheapest_food:
-                        food_line += f"🍽️ **{cheapest_food}**"
-                    if food_text:
-                        food_line += f"  \n{food_text}"
-                    st.markdown(food_line)
-
+                # Food line: just show the full Food description with emoji
+                if food_text:
+                    st.markdown(f"🍽️ {food_text}")
                 if fav_checked:
                     new_favorite_keys.append(key)
 
