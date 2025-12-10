@@ -129,6 +129,18 @@ if zone_col in df.columns:
 else:
     zone_choice = "Any"
 
+# NEW: Casino filter (options depend on selected zone)
+casino_col = "Casino"
+if casino_col in df.columns:
+    if zone_choice != "Any" and zone_col in df.columns:
+        casino_base = df[df[zone_col] == zone_choice]
+    else:
+        casino_base = df
+    casino_options = ["Any"] + sorted(casino_base[casino_col].dropna().unique().tolist())
+    casino_choice = st.sidebar.selectbox("Casino", casino_options, index=0)
+else:
+    casino_choice = "Any"
+
 # Day-of-week mapping
 DAY_FLAGS = {
     "Sunday": "Is Sunday",
@@ -249,6 +261,10 @@ filtered = df.copy()
 if zone_choice != "Any" and zone_col in filtered.columns:
     filtered = filtered[filtered[zone_col] == zone_choice]
 
+# NEW: Casino filter
+if casino_choice != "Any" and casino_col in filtered.columns:
+    filtered = filtered[filtered[casino_col] == casino_choice]
+
 # All-day filter
 if all_day_only and "Is All Day" in filtered.columns:
     filtered = filtered[filtered["Is All Day"] == True]
@@ -299,7 +315,7 @@ if show_favorites_only:
 st.subheader("✅ Matching Happy Hours")
 
 if filtered.empty:
-    st.warning("No happy hours match your filters. Try adjusting time, zone, budget, or day.")
+    st.warning("No happy hours match your filters. Try adjusting time, zone, casino, budget, or day.")
 else:
     st.write(f"{len(filtered)} result(s)")
 
@@ -343,7 +359,6 @@ else:
             day_label = safe_str(row.get("Day of Week"))
             drinks_text = safe_str(row.get("Drinks"))
             food_text = safe_str(row.get("Food"))
-            cheapest_food = safe_str(row.get("Cheapest Food Item"))
             start_t = row.get("Start Time Clean")
             end_t = row.get("End Time Clean")
 
@@ -394,9 +409,10 @@ else:
                 if drinks_text:
                     st.markdown(f"🍹 {drinks_text}")
 
-                # Food line: just show the full Food description with emoji
+                # Food line: just show the full Food description
                 if food_text:
                     st.markdown(f"🍽️ {food_text}")
+
                 if fav_checked:
                     new_favorite_keys.append(key)
 
