@@ -101,29 +101,63 @@ def safe_str(val) -> str:
     return text.strip()
 
 
-def format_prices_in_text(text: str) -> str:
+def fix_prices(text: str) -> str:
     """
     Add a $ in front of price-like numbers that don't already have one.
-    e.g. '3 bottled beer, 5 craft beer' -> '$3 bottled beer, $5 craft beer'
-    but leave '$5 draft beer' alone and avoid messing '2-for-1' style patterns.
+
+    e.g. '3 bottled beer, 5 craft beer' ->
+         '3 bottled beer, $5 craft beer'
+
+    But leave quantity-style phrases alone:
+      - 3 PBR, 5 domestic, 6 wells, 9 martinis
     """
     if not text:
         return text
 
-    def repl(match):
-        prefix = match.group(1)
-        num = match.group(2)
-        # If prefix already ends with $, keep as-is
-        if prefix.endswith("$"):
-            return prefix + num
-        # Avoid adding $ after '-' or '/' (e.g. 2-for-14)
-        if prefix.endswith("-") or prefix.endswith("/"):
-            return prefix + num
-        return prefix + "$" + num
+    # Words that usually mean a count (not a price)
+    quantity_words = [
+        "pbr",
+        "domestic",
+        "wells",
+        "well",
+        "draft",
+        "drafts",
+        "beer",
+        "beers",
+        "wine",
+        "wines",
+        "shots",
+        "shot",
+        "martinis",
+        "martini",
+        "seltzers",
+        "seltzer",
+        "rtds",
+        "rtd",
+        "margarita",
+        "margaritas",
+        "cocktail",
+        "cocktails",
+        "oysters",
+        "apps",
+        "appetizers",
+        "tapas",
+    ]
+    qty_pattern = "|".join(quantity_words)
 
-    # (start or non-digit/$) + number + (next char is a letter, e.g. 'beer')
-    pattern = r"(^|[^0-9$])(\d+(\.\d+)?)(?=\s*[A-Za-z])"
-    return re.sub(pattern, repl, text)
+    # \b(\d+)  -> standalone number
+    # (?=\s+(?!qty_pattern)\w)  -> followed by a word that is NOT in quantity_words
+    pattern = rf"\b(\d+)(?=\s+(?!{qty_pattern})\w)"
+
+    def repl(match):
+        num = match.group(1)
+        # If the number is already preceded by $, don't touch it
+        start = match.start(1)
+        if start > 0 and text[start - 1] == "$":
+            return num
+        return f"${num}"
+
+    return re.sub(pattern, repl, text, flags=re.IGNORECASE)
 
 
 # ---------- Load data ----------
@@ -180,7 +214,7 @@ DAY_FLAGS = {
 day_options = ["Any"] + list(DAY_FLAGS.keys())
 
 # ---- Session state defaults for day/time ----
-default_time = time(19, 0)  # 7 PM default
+default_time = time(19, 0)  # 7 PM
 
 if "day_choice" not in st.session_state or st.session_state["day_choice"] not in day_options:
     st.session_state["day_choice"] = "Any"
@@ -309,8 +343,10 @@ if "Start Time Clean" in filtered.columns and "End Time Clean" in filtered.colum
         end = row["End Time Clean"]
         if pd.isna(start) or pd.isna(end):
             return False
+        # Normal same-day window (END EXCLUSIVE)
         if start <= end:
             return start <= selected_time < end
+        # Overnight window (e.g. 9 PM–2 AM next day)
         return (selected_time >= start) or (selected_time < end)
 
     filtered = filtered[filtered.apply(row_is_in_window, axis=1)]
@@ -431,17 +467,18 @@ else:
                 if day_time_bits:
                     st.markdown(" • ".join(day_time_bits))
 
-                # Drinks line: full description, with smart $ formatting, plain text
+                # Drinks line: full description with smart $ formatting (plain text)
                 if drinks_text:
-                    st.text("🍹 " + format_prices_in_text(drinks_text))
+                    st.write("🍹 " + fix_prices(drinks_text))
 
-                # Food line: full description with emoji, skip if blank or literal "—"
+                # Food line: full description with emoji (plain text)
                 if food_text and food_text != "—":
-                    st.text("🍽️ " + food_text)
+                    st.write("🍽️ " + food_text)
 
                 if fav_checked:
                     new_favorite_keys.append(key)
 
+        # Update favorites from mobile checkboxes
         old_favorites = st.session_state.get("favorites", {})
         new_favorites = {
             key: old_favorites.get(key, {"tags": []}) for key in new_favorite_keys
