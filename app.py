@@ -105,7 +105,7 @@ def format_prices_in_text(text: str) -> str:
     """
     Add a $ in front of price-like numbers that don't already have one.
     e.g. '3 bottled beer, 5 craft beer' -> '$3 bottled beer, $5 craft beer'
-    but leave '$7 beers' alone and try not to mess with things like '2-for-1'.
+    but leave '$5 draft beer' alone and avoid messing '2-for-1' style patterns.
     """
     if not text:
         return text
@@ -116,12 +116,12 @@ def format_prices_in_text(text: str) -> str:
         # If prefix already ends with $, keep as-is
         if prefix.endswith("$"):
             return prefix + num
-        # Avoid adding $ to things like '2-for-1' where the number is right after '-' or '/'
+        # Avoid adding $ after '-' or '/' (e.g. 2-for-14)
         if prefix.endswith("-") or prefix.endswith("/"):
             return prefix + num
         return prefix + "$" + num
 
-    # Match: (start or non-digit/$) + number (int or float) followed by a letter/space/punctuation
+    # (start or non-digit/$) + number + (next char is a letter, e.g. 'beer')
     pattern = r"(^|[^0-9$])(\d+(\.\d+)?)(?=\s*[A-Za-z])"
     return re.sub(pattern, repl, text)
 
@@ -188,7 +188,7 @@ if "day_choice" not in st.session_state or st.session_state["day_choice"] not in
 if "time_choice" not in st.session_state:
     st.session_state["time_choice"] = default_time
 
-# ---- Day + time widgets (pull from session_state, no widget keys) ----
+# ---- Day + time widgets (pull from session_state) ----
 current_day = st.session_state["day_choice"]
 current_time = st.session_state["time_choice"]
 
@@ -299,7 +299,7 @@ if all_day_only and "Is All Day" in filtered.columns:
 if day_choice != "Any":
     flag_col = DAY_FLAGS[day_choice]
     if flag_col in filtered.columns:
-        filtered = filtered[flag_col == True]
+        filtered = filtered[filtered[flag_col] == True]
 
 # Time filter using Start Time Clean / End Time Clean
 if "Start Time Clean" in filtered.columns and "End Time Clean" in filtered.columns:
@@ -431,13 +431,13 @@ else:
                 if day_time_bits:
                     st.markdown(" • ".join(day_time_bits))
 
-                # Drinks line: full description, with smart $ formatting, no markdown code style
+                # Drinks line: full description, with smart $ formatting, plain text
                 if drinks_text:
-                    st.write("🍹 " + format_prices_in_text(drinks_text))
+                    st.text("🍹 " + format_prices_in_text(drinks_text))
 
-                # Food line: full description with emoji
-                if food_text:
-                    st.write("🍽️ " + food_text)
+                # Food line: full description with emoji, skip if blank or literal "—"
+                if food_text and food_text != "—":
+                    st.text("🍽️ " + food_text)
 
                 if fav_checked:
                     new_favorite_keys.append(key)
