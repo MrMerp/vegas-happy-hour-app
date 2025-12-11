@@ -1,5 +1,6 @@
 import json
 import os
+import re
 from datetime import time, datetime, timedelta
 
 import pandas as pd
@@ -100,6 +101,31 @@ def safe_str(val) -> str:
     return text.strip()
 
 
+def format_prices_in_text(text: str) -> str:
+    """
+    Add a $ in front of price-like numbers that don't already have one.
+    e.g. '3 bottled beer, 5 craft beer' -> '$3 bottled beer, $5 craft beer'
+    but leave '$7 beers' alone and try not to mess with things like '2-for-1'.
+    """
+    if not text:
+        return text
+
+    def repl(match):
+        prefix = match.group(1)
+        num = match.group(2)
+        # If prefix already ends with $, keep as-is
+        if prefix.endswith("$"):
+            return prefix + num
+        # Avoid adding $ to things like '2-for-1' where the number is right after '-' or '/'
+        if prefix.endswith("-") or prefix.endswith("/"):
+            return prefix + num
+        return prefix + "$" + num
+
+    # Match: (start or non-digit/$) + number (int or float) followed by a letter/space/punctuation
+    pattern = r"(^|[^0-9$])(\d+(\.\d+)?)(?=\s*[A-Za-z])"
+    return re.sub(pattern, repl, text)
+
+
 # ---------- Load data ----------
 try:
     df = load_data(DATA_FILE)
@@ -129,7 +155,7 @@ if zone_col in df.columns:
 else:
     zone_choice = "Any"
 
-# NEW: Casino filter (options depend on selected zone)
+# Casino filter (options depend on selected zone)
 casino_col = "Casino"
 if casino_col in df.columns:
     if zone_choice != "Any" and zone_col in df.columns:
@@ -261,7 +287,7 @@ filtered = df.copy()
 if zone_choice != "Any" and zone_col in filtered.columns:
     filtered = filtered[filtered[zone_col] == zone_choice]
 
-# NEW: Casino filter
+# Casino filter
 if casino_choice != "Any" and casino_col in filtered.columns:
     filtered = filtered[filtered[casino_col] == casino_choice]
 
@@ -273,7 +299,7 @@ if all_day_only and "Is All Day" in filtered.columns:
 if day_choice != "Any":
     flag_col = DAY_FLAGS[day_choice]
     if flag_col in filtered.columns:
-        filtered = filtered[filtered[flag_col] == True]
+        filtered = filtered[flag_col == True]
 
 # Time filter using Start Time Clean / End Time Clean
 if "Start Time Clean" in filtered.columns and "End Time Clean" in filtered.columns:
@@ -405,13 +431,13 @@ else:
                 if day_time_bits:
                     st.markdown(" • ".join(day_time_bits))
 
-                # Drinks line: just show the full Drinks description
+                # Drinks line: full description, with smart $ formatting, no markdown code style
                 if drinks_text:
-                    st.markdown(f"🍹 {drinks_text}")
+                    st.write("🍹 " + format_prices_in_text(drinks_text))
 
-                # Food line: just show the full Food description
+                # Food line: full description with emoji
                 if food_text:
-                    st.markdown(f"🍽️ {food_text}")
+                    st.write("🍽️ " + food_text)
 
                 if fav_checked:
                     new_favorite_keys.append(key)
